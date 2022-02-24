@@ -1,0 +1,10 @@
+<ul>
+    
+    <li *ngFor="let Animals of EveryAnimals">
+        
+        {{"Vilket Djur?:" + " " + Animals.animal }}<br>
+        {{ "Hur gammal =" + " " + Animals.age + " år"}}<br>
+        {{ "Är det ett inomhus djur?" + " " + Animals.houseAnimal }}<br>
+        <div *ngIf="!Animals.isFed">{{"Ätit?" + " "+ Animals.isFed}}</div>
+    </li>
+</ul>
